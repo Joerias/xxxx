@@ -1,3 +1,3 @@
-import EventTracking from "./event-tracking/index.vue";
+import EventTrackingTpl from "./event-tracking/index.vue";
 
-export { EventTracking };
+export { EventTrackingTpl };
