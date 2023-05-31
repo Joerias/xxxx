@@ -14,10 +14,10 @@ npm i aegis-event-tracking
 
 ```javascript
 // 引入
-import EventTracking from "aegis-event-tracking";
+import AegisEventTracking from "aegis-event-tracking";
 
 // 全局挂载
-app.use(EventTracking).mount("#app");
+app.use(AegisEventTracking).mount("#app");
 ```
 
 2. App.vue 中使用，实现 div 元素 data-et 的自动捕获

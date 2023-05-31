@@ -1,11 +1,12 @@
+<script lang="ts">
+export default {
+	name: "EventTrackingTpl",
+};
+</script>
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { RouteLocationNormalizedLoaded } from "vue-router";
 import { EventTracking } from "../../js/event-tracking";
-
-defineOptions({
-	name: "EventTrackingTpl",
-});
 
 type Props = {
 	environment: string;

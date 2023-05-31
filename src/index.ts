@@ -5,7 +5,7 @@ import type { EventTrackingOptsType, ActionValue, StayTimeActionValue, ReportOpt
 
 const obj: { [key: string]: Component } = components;
 
-export const Odyssey = {
+export const AegisEventTracking = {
 	install: (app: App) => {
 		for (const i in obj) {
 			app.component(i, obj[i]);
