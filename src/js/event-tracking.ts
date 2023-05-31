@@ -1,4 +1,4 @@
-interface EventTrackingOptsType {
+export interface EventTrackingOptsType {
 	environment: string;
 	projectName: string;
 	modulesName: string;
@@ -12,12 +12,15 @@ interface EventTrackingOptsType {
 }
 
 interface ReportOptsType<T> {
-	action: "enter" | "leave" | "event" | "api";
+	action: ActionValue;
 	eventName?: string;
 	urlPath?: string;
 	apiUrl?: string;
 	extraInfo?: T;
 }
+
+type ActionValue = "enter" | "leave" | "event" | "api";
+export type StayTimeActionValue = "enter" | "leave";
 
 interface SaveOptsType<T> {
 	eventId: string;
