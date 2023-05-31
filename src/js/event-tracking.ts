@@ -11,7 +11,7 @@ export interface EventTrackingOptsType {
 	globalExtra?: any;
 }
 
-interface ReportOptsType<T> {
+export interface ReportOptsType<T> {
 	action: ActionValue;
 	eventName?: string;
 	urlPath?: string;
@@ -19,7 +19,7 @@ interface ReportOptsType<T> {
 	extraInfo?: T;
 }
 
-type ActionValue = "enter" | "leave" | "event" | "api";
+export type ActionValue = "enter" | "leave" | "event" | "api";
 export type StayTimeActionValue = "enter" | "leave";
 
 interface SaveOptsType<T> {

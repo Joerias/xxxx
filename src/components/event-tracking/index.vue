@@ -3,6 +3,10 @@ import { onMounted } from "vue";
 import { RouteLocationNormalizedLoaded } from "vue-router";
 import { EventTracking } from "../../js/event-tracking";
 
+defineOptions({
+	name: "EventTrackingTpl",
+});
+
 type Props = {
 	environment: string;
 	projectName: string;

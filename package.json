@@ -1,6 +1,6 @@
 {
 	"name": "aegis-event-tracking",
-	"version": "0.0.1",
+	"version": "0.9.12",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

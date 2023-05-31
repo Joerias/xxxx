@@ -48,7 +48,11 @@ extraInfo.jdgsInfo = {
 
 ```javascript
 // 引入方法
-import { EventTracking, type EventTrackingOptsType } from 'aegis-event-tracking';
+import {
+  EventTracking,
+  type EventTrackingOptsType,
+  type StayTimeActionValue
+} from 'aegis-event-tracking';
 
 import router from './index'; // 引入本地路由表
 const ENV = import.meta.env.MODE;
@@ -65,7 +69,7 @@ const etParamsGenerate = (router: RouteLocationNormalizedLoaded): EventTrackingO
 };
 
 // 通配report方法参数，extraInfo参数为可选
-const etParamsReport = (action: string, eventName: string) => ({
+const etParamsReport = (action: StayTimeActionValue, eventName: string) => ({
   action,
   eventName,
   extraInfo: {
@@ -95,7 +99,7 @@ router.afterEach((to: RouteLocationNormalizedLoaded) => {
 
 ```javascript
 // 引入资源
-import { EventTracking, type EventTrackingOptsType } from 'aegis-event-tracking';
+import { EventTracking, type ReportOptsType } from 'aegis-event-tracking';
 import router from '@/router';
 
 // 初始化数据
