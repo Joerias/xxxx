@@ -14,7 +14,7 @@ npm i aegis-event-tracking
 
 ```javascript
 // 引入
-import AegisEventTracking from "aegis-event-tracking";
+import { AegisEventTracking } from "aegis-event-tracking";
 
 // 全局挂载
 app.use(AegisEventTracking).mount("#app");
